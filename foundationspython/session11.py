@@ -1,47 +1,47 @@
 
-# # int variable=10;
+# int variable=10;
 
 
-# #VARIABLES
+#VARIABLES
 
 
-# number=10
+number=10
 
-# name="Cesar Sinchiguano"
+name="Cesar Sinchiguano"
 
-# active=True
+active=True
 
-# print("gggggg")
-# if number>5:
-#     print("The number is greater than 5 ")
-# else:
-#     print("The number is less than 5")
-
-
-# for i in range(10):
-#     print("The number is:",i)
-#     print(f"The number is: {i}")
+print("gggggg")
+if number>5:
+    print("The number is greater than 5 ")
+else:
+    print("The number is less than 5")
 
 
-# students=list()
-# for i in range(100):
-#     students.append(i)
+for i in range(10):
+    print("The number is:",i)
+    print(f"The number is: {i}")
 
 
-# for i in students:
-#     print("The student number is :",i)
-
-# names=["carlos","cesar","jose","maria"]
-# for name in names:
-#     print(name)
+students=list()
+for i in range(100):
+    students.append(i)
 
 
-# names={"carlos":1,"cesar":2,"jose":3,"maria":4}
+for i in students:
+    print("The student number is :",i)
 
-# print(names["jose"])
+names=["carlos","cesar","jose","maria"]
+for name in names:
+    print(name)
 
-# for name in names.items():
-#     print(name)
+
+names={"carlos":1,"cesar":2,"jose":3,"maria":4}
+
+print(names["jose"])
+
+for name in names.items():
+    print(name)
 
 students = [
     {"name": "Ana", "score": 9.2},
@@ -65,3 +65,6 @@ for name in students:
         print("The student PASSED the course")
     else: 
         print("The student FAILED the course")
+
+
+print("the end of this tutorial")
