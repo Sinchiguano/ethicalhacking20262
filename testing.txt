@@ -1,0 +1,2 @@
+print("\nToday's date:")
+os.system("date")
