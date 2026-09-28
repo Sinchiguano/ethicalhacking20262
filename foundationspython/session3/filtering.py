@@ -4,6 +4,9 @@ user.append({"id": 1, "name": "Cesar", "email": "cesar.sinchiguano@gmail.com", "
 user.append({"id": 2, "name": "Jeremy", "email": "jeremy.guerrero@gmail.com", "role": "user"})
 user.append({"id": 3, "name": "Danilo", "email": "danilo.guerrero@gmail.com", "role": "user"})
 user.append({"id": 4, "name": "AdminUser", "email": "adminuser@gmail.com", "role": "admin"})
+user.append
+
+
 
 # counter=list()
 
@@ -30,5 +33,8 @@ print(finalUser)
 
 
 "Sort a list of vulnerability dictionaries by a numeric severity field, highest first, using sorted()."
+
+
+
 
 
