@@ -1,0 +1,20 @@
+body {
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+.form-card {
+    max-width: 600px;
+}
+
+/* badge colors for each severity level */
+.severity-low      { background-color: #198754; }
+.severity-medium   { background-color: #ffc107; color: #000; }
+.severity-high     { background-color: #fd7e14; }
+.severity-critical { background-color: #dc3545; }

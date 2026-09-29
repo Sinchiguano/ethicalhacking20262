@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+Document
+{% endblock %}
+
+
+
+{% block content %}
+
+    <!-- create a control loop where i can print the name and age
+    but you have to verify that the age is greater than 18
+    and if not, print "you are not eligible to vote" -->
+    <h1>hello world</h1>
+    <h1>hello {{name}}</h1>
+    <h1>Your age is {{age}}</h1>
+    {% if age>18%}
+    <h1>You are eligible to vote</h1>
+    {% else %}
+    <h1>You are not eligible to vote</h1>
+    {% endif %}
+
+{% endblock %}

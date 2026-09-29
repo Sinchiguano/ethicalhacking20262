@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %}Vulnerability Log Page{% endblock %}
+
+{% block content %}
+<div class="card shadow-sm mx-auto form-card">
+    <div class="card-body">
+        <h1 class="h3 mb-4">Vulnerability Log Page</h1>
+
+        <form method="POST" action="{{ url_for('index') }}">
+            <div class="mb-3">
+                <label for="title" class="form-label">Title</label>
+                <input type="text" class="form-control" id="title" name="title"
+                       placeholder="e.g. SQL injection in login form" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="category" class="form-label">OWASP Category</label>
+                <select class="form-select" id="category" name="category" required>
+                    {% for category in categoriesHtml %}
+                    <option value="{{ category }}">{{ category }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="mb-4">
+                <label for="severity" class="form-label">Severity</label>
+                <select class="form-select" id="severity" name="severity" required>
+                    {% for severity in severitiesHtml %}
+                    <option value="{{ severity }}">{{ severity }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="d-flex gap-2">
+                <button type="submit" class="btn btn-primary">Generate Report</button>
+                <a href="{{ url_for('report') }}" class="btn btn-outline-secondary">Go to Report</a>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

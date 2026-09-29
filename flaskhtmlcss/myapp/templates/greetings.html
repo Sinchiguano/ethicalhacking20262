@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <title>Greeting</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            text-align: 
+                center;
+        }
+        p {
+            color: #666;
+            text-align: center;     
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Welcome {{nameHtml}}</h1>
+    <p>Thank you for joining us. We are excited to have you on board.</p>
+    {% if ageHtml>=18%}
+        <p>You are eligible to vote.</p>
+    {% else %}
+    <p>You are not eligible to vote.</p>
+    {% endif %}
+
+</body>
+</html>

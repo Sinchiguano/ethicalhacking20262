@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}Vulnerability Report{% endblock %}
+
+{% block content %}
+<h1 class="h3 mb-4">Vulnerability Report</h1>
+
+{% if vulnerabilitiesHtml %}
+<div class="table-responsive">
+    <table class="table table-striped table-hover align-middle bg-white shadow-sm">
+        <thead class="table-dark">
+            <tr>
+                <th>#</th>
+                <th>Title</th>
+                <th>OWASP Category</th>
+                <th>Severity</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for vuln in vulnerabilitiesHtml %}
+            <tr>
+                <td>{{ loop.index }}</td>
+                <td>{{ vuln.title }}</td>
+                <td>{{ vuln.category }}</td>
+                <td><span class="badge severity-{{ vuln.severity | lower }}">{{ vuln.severity }}</span></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% else %}
+<div class="alert alert-info">No vulnerabilities logged yet.</div>
+{% endif %}
+
+<a href="{{ url_for('index') }}" class="btn btn-primary">Back to Log Page</a>
+{% endblock %}

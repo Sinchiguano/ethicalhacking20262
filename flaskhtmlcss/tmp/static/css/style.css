@@ -1,0 +1,124 @@
+
+
+    /* General page style */
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f4f6f9;
+        color: #333;
+    }
+
+
+    /* Navigation bar */
+    header {
+        background-color: #1e3a5f;
+        color: white;
+        padding: 20px 50px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    header h2 {
+        margin: 0;
+    }
+
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 25px;
+    }
+
+
+    nav a:hover {
+        color: #4fc3f7;
+    }
+
+
+    /* Main section */
+    main {
+        text-align: center;
+        padding: 100px 20px;
+    }
+
+
+    main h1 {
+        font-size: 50px;
+        color: #1e3a5f;
+        margin-bottom: 20px;
+    }
+
+
+    main p {
+        font-size: 20px;
+        color: #666;
+        margin-bottom: 40px;
+    }
+
+
+    /* Button */
+    button {
+        background-color: #2196f3;
+        color: white;
+
+        padding: 15px 30px;
+
+        border: none;
+        border-radius: 8px;
+
+        font-size: 16px;
+
+        cursor: pointer;
+    }
+
+
+    button:hover {
+        background-color: #0b7dda;
+    }
+
+
+    /* Card section */
+    .cards {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+
+        margin-top: 70px;
+
+        flex-wrap: wrap;
+    }
+
+
+    .card {
+        background-color: white;
+
+        width: 250px;
+
+        padding: 30px;
+
+        border-radius: 10px;
+
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+
+    .card h3 {
+        color: #1e3a5f;
+    }
+
+
+    /* Footer */
+    footer {
+        background-color: #1e3a5f;
+        color: white;
+
+        text-align: center;
+
+        padding: 20px;
+
+        margin-top: 80px;
+    }
+

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+        <title>LIST OF NAMES</title>
+</head>
+<body>
+    <!-- we are going to iterate in a list with jinja 2 -->
+        <ul>
+            {% for name, age in peopleHtml %}
+            <p1>{{ name }} is {{ age }} years old.</p1>
+                {%if age > 18 %}
+                    <p>You are an adult and allowed to vote.</p>
+                {%else%}
+                    <p>You are a minor and not allowed to vote.</p>
+                {%endif%}   
+            {% endfor %}
+        </ul>
+</body>
+</html>
